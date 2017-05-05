@@ -1,0 +1,52 @@
+﻿<Window x:Name="MAIN" x:Class="STS_Web_App_Mockup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STS_Web_App_Mockup"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="700" Width="1050">
+    <Grid x:Name="WindowGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="630*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+        <Rectangle x:Name="NavBox" Fill="#DDFAFF" Stroke="AntiqueWhite" Grid.Row="1"/>
+        <Rectangle x:Name="TitleBox" Fill="#DDFAFF" Stroke="AntiqueWhite" Margin="0,0,0,584"/>
+        <Label x:Name="Title" Content="Default Title" Margin="0,0,0,584" FontSize="18"/>
+        <ScrollViewer x:Name="MenuContainer" Margin="0,46,0,0" >
+            <StackPanel x:Name="MenuStack" Width="513">
+                <TextBlock x:Name="MenuText" FontSize="20" Margin="200,0"><Run>Main Menu</Run></TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+        <Grid x:Name="QuestionContainer" Margin="0,46,0,0" d:IsHidden="True">
+            <ScrollViewer x:Name="questionScroller" Margin="0,0,0,267" Grid.ColumnSpan="2">
+                <TextBlock x:Name="question" TextWrapping="Wrap"><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor lorem accumsan felis rhoncus, a rhoncus ante cursus. Morbi nec maximus augue, ac tempor eros. Morbi sagittis dui at sapien congue, vitae faucibus nibh efficitur. Cras in purus at tortor hendrerit volutpat sit amet vitae nibh. Sed dapibus sodales malesuada. Nulla lacinia dignissim mi eu condimentum. Sed fringilla magna nec arcu tincidunt gravida. Nunc in malesuada lectus, eget semper nibh. Nullam sed risus est. Curabitur sit amet hendrerit nisi, ut semper dolor. Duis lobortis odio quis vehicula euismod."/><LineBreak/><Run/><LineBreak/><Run Text="Vivamus semper enim sed imperdiet convallis. Maecenas viverra est leo, vitae ornare sapien pretium fringilla. Proin vestibulum, purus id pretium tincidunt, sem ante tristique sem, ac ultrices metus elit sed mi. Aliquam faucibus condimentum tincidunt. Nam elit sapien, aliquam id risus eu, accumsan malesuada libero. Duis venenatis convallis risus, id eleifend metus aliquam quis. Praesent quis fermentum lorem. Mauris in nisi ut nibh lacinia suscipit et et mauris. Cras elementum ante ac mauris venenatis tristique. Fusce tincidunt felis vulputate, facilisis arcu non, consequat nunc. Ut dignissim justo mi, at porta elit gravida sed. Donec quis ligula ac turpis semper egestas non condimentum dui. Aliquam est eros, molestie non fermentum id, pretium nec urna."/><LineBreak/><Run/><LineBreak/><Run Text="Proin sagittis tristique iaculis. Nullam quis dictum enim, nec imperdiet purus. Proin et velit non nulla bibendum mollis quis eu risus. Donec vehicula gravida eros at accumsan. Vivamus at hendrerit risus. Donec a malesuada nunc. Mauris sit amet ex fermentum, feugiat turpis a, maximus nisl. Cras a viverra nisl. Aliquam interdum malesuada tortor, at posuere nunc consequat id. In volutpat lacus et sapien congue, sed hendrerit velit lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus. In pharetra venenatis suscipit."/><LineBreak/><Run/><LineBreak/><Run Text="Donec leo orci, ullamcorper ac felis nec, suscipit ultricies sapien. In rhoncus arcu magna, elementum ultrices augue placerat eget. Sed vitae ante tellus. Donec vitae lacus vitae lorem malesuada venenatis. Nunc pulvinar mollis lorem commodo pretium. Duis vulputate neque sed justo commodo vestibulum. Nunc interdum diam et felis venenatis sollicitudin nec vitae mi. Fusce pellentesque dignissim dui eget hendrerit. In fringilla, turpis eu scelerisque mollis, massa purus facilisis tellus, ut tincidunt dolor lorem eu orci. Ut viverra mollis orci, nec ultricies metus ullamcorper sit amet. Praesent feugiat lacinia velit, vel dapibus lorem rutrum in. Donec lobortis est non risus vehicula lacinia. Duis interdum nisl ex, a consequat ipsum feugiat vel. Integer felis felis, rutrum et elit eget, sodales viverra felis. Ut eu erat ut ante rhoncus dignissim vulputate vel erat. Nunc pretium non arcu lacinia rutrum."/><LineBreak/><Run/><LineBreak/><Run Text="In sagittis ante odio, eget accumsan lectus dignissim non. Mauris finibus dolor mauris, vitae sagittis nisl eleifend eu. Pellentesque nec venenatis magna. Donec maximus lorem ut turpis fermentum pellentesque. Sed nec nibh dolor. Nullam et eros pretium, scelerisque sem eu, semper mi. Nunc ipsum eros, hendrerit sed dignissim nec, tempor nec ex. Ut placerat pharetra ultricies. Nunc facilisis sed elit non tincidunt. Cras arcu eros, mollis id ullamcorper a, accumsan finibus enim. Curabitur in nibh accumsan, lobortis elit vitae, consectetur dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "/></TextBlock>
+            </ScrollViewer>
+            <RadioButton x:Name="A" Content="Answer A" Margin="80,425,564,104"/>
+            <RadioButton x:Name="B" Content="Answer B" Margin="485,425,159,104"/>
+            <RadioButton x:Name="C" Content="Answer C" Margin="80,490,564,39"/>
+            <RadioButton x:Name="D" Content="Answer D" Margin="485,490,159,39"/>
+            <Button x:Name="check" Content="Check Answer" Margin="885,526,46,10" Click="check_Click"/>
+        </Grid>
+        <ScrollViewer x:Name="TextContainer" Margin="0,46,0,39" Grid.RowSpan="2" d:IsHidden="True">
+            <TextBlock x:Name="MainText" TextWrapping="Wrap" Text="Test"/>
+        </ScrollViewer>
+        <Grid x:Name="ImageContainer" Margin="0,46,0,0" d:IsHidden="True">
+            <Image x:Name="SlideImage" Margin="0,10,0,255" Source="/Images/memetheivery.png"/>
+            <ScrollViewer x:Name="TextScroller" Margin="0,375,0,0">
+                <TextBlock x:Name="ImageText" TextWrapping="Wrap" Text="Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself."/>
+            </ScrollViewer>
+        </Grid>
+        <Image x:Name="OnlyImageContainer" Margin="0,46,0,0" d:IsHidden="True"/>
+        <Grid RenderTransformOrigin="0.5,0.5" Grid.Row="1" x:Name="NavGrid" Height="39" VerticalAlignment="Bottom">
+            <Button x:Name="Next" Content="NEXT -&gt;" Margin="901,0,0,0" Click="Next_Click" HorizontalAlignment="Left" Width="96"/>
+            <Button x:Name="Prev" Content="&lt;- PREV" Margin="684,0,264,0" Click="Prev_Click"/>
+            <Button x:Name="Home" Content="HOME" Margin="801,0,164,0" Click="Home_Click"/>
+            <Button x:Name="Exit" Content="Exit" Margin="0,0,948,0" Click="Exit_Click"/>
+        </Grid>
+
+
+    </Grid>
+</Window>
