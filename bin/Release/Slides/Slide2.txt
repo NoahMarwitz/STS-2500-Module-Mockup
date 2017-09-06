@@ -1,0 +1,11 @@
+Type Image
+Title An Image
+Text 1
+This here is an image Slide. The image is above the text and does not scroll with the text at all.
+Image Panic.png
+AnswerA na
+AnswerB na
+AnswerC na
+AnswerD na
+Correct na
+Timer 3

@@ -1,0 +1,8 @@
+﻿Type Text
+Text Text3
+Image imagelocation
+AnswerA a
+AnswerB b
+AnswerC c
+AnswerD d
+Correct b

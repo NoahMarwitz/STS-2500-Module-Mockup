@@ -1,0 +1,10 @@
+Type Menu
+Title Menu
+Text 0
+Image na
+AnswerA na
+AnswerB na
+AnswerC na
+AnswerD na
+Correct na
+Timer 0
