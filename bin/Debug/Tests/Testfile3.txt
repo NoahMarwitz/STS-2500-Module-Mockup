@@ -1,8 +1,0 @@
-﻿Type Image
-Text Image
-Image Panic.png
-AnswerA a
-AnswerB b
-AnswerC c
-AnswerD d
-Correct b

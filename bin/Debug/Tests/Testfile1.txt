@@ -1,8 +1,0 @@
-﻿Type Text
-Text IT WORKED
-Image imagelocation
-AnswerA a
-AnswerB b
-AnswerC c
-AnswerD d
-Correct b

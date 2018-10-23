@@ -1,8 +1,0 @@
-﻿Type Question
-Text Question 1
-Image imagelocation
-AnswerA This is an answer
-AnswerB This is correct
-AnswerC This is not
-AnswerD This is filler
-Correct b
